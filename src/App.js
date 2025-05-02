@@ -11,6 +11,7 @@ import Profile from './component/Dashboard/profile/profile';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import { getTotals } from './component/Dashboard/cart/cartslice';
+import Order from './component/Dashboard/cart/order';
 function App() {
   store.dispatch(getTotals())
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/login'> <Login /></Route>
         <Route path='/home'> <Home /></Route>
         <Route path='/cart'> <Cart /></Route>
+        <Route path="/order" component={Order} />
         <Route path='/singledish'> <Singledish /></Route>
         <Route path='/alldish'> <Alldish /></Route>
         <Route path='/profile'> <Profile /></Route>

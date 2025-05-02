@@ -11,7 +11,8 @@ import youtube from '../image/youtube.png'
 import { Link } from "react-router-dom";
 function Footer(){
     let Food1=Food.filter((ele)=>ele.titlename==='IndianFood');
-    let Food2=Food.filter((ele)=>ele.titlename==='ItalianFood')
+    let Food2=Food.filter((ele)=>ele.titlename==='ItalianFood');
+    let Food3=Food.filter((ele)=>ele.titlename==='korean');
     let history=useHistory();
       function Alldish(titleId){
         history.push(`/alldish?id=${titleId}`)
@@ -41,7 +42,7 @@ function Footer(){
                     <ul>
                         <li onClick={()=>Alldish(Food1[0].titleId) } >Indian</li>
                         <li onClick={()=>Alldish(Food2[0].titleId)}>Italian</li>
-                        <li>Korean</li>
+                        <li onClick={()=>Alldish(Food3[0].titleId)}>Korean</li>
                     </ul>
                 </div>
                 <div>

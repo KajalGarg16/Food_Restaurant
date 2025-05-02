@@ -23,14 +23,14 @@ function Header(){
     return(
         <div className="header">
             <img src={logo} className='logo'></img>
-            <div><input type='text' className="search-input"/><button >Search</button></div>
+            {/* <div><input type='text' className="search-input"/><button >Search</button></div> */}
 
             <div style={{position:'relative',width:'100px'}}><button className="cart-button" onClick={AddCart}><img  src={cartimg}></img></button>
             <span className="msg"> {cartTotalQUantity}</span></div>
              {' '}
-            <button className="cart-button" ><p style={{color:"white",marginTop:'12px'}} onClick={gotoHome}>Home</p></button>
-            <button className="cart-button"  ><p style={{color:"white",marginTop:'12px'}} onClick={Profile}>Profile</p></button>  
-            <button className="cart-button"  ><p style={{color:"white",marginTop:'12px'}} onClick={Logout}>Log out</p></button>  
+            <button className="cart-button" ><p style={{color:"black",marginTop:'12px',fontWeight:'600'}} onClick={gotoHome}>Home</p></button>
+            <button className="cart-button"  ><p style={{color:"black",marginTop:'12px',fontWeight:'600'}} onClick={Profile}>Profile</p></button>  
+            <button className="cart-button"  ><p style={{color:"black",marginTop:'12px',fontWeight:'600'}} onClick={Logout}>Log out</p></button>  
         </div>
     )
 }

@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import Footer from "../footer/footer";
 import { addTocart, clearCartItem, decreaseCart, getTotals, removeCartItem } from "./cartslice";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 function Cart(){
     const history=useHistory()
     const cart=useSelector((state)=>state.cart)
@@ -29,7 +30,7 @@ function Cart(){
         dispatch(clearCartItem())
     }
     function order(){
-        alert('Your order placed successfully!!')
+        // alert('Your order placed successfully!!')
         dispatch(clearCartItem())
     }
     return(
@@ -83,7 +84,7 @@ function Cart(){
                             <div>
                                 <p>Subtotal <span style={{fontSize:'12px'}}>*including all taxes*</span>: <b><span style={{fontSize:'23px'}}> ₹{cart.totalAmount}/-</span></b></p>
                                
-                                <button className="Order-button " onClick={order}>Order</button>
+                                <Link to='/order'><button className="Order-button " onClick={order}>Order</button></Link>
                             </div>
                         </div>
                     </div>

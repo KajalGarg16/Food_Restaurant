@@ -61,7 +61,7 @@ box-shadow: 0px 10px 30px black;
 .logo{
     width: 100px;
     height: 60px;
-    margin-right: 150px;
+    margin-right: 300px;
     margin-top: -15px;
     padding: 2px;
 }
@@ -83,22 +83,25 @@ box-shadow: 0px 10px 30px black;
     border: none;
     margin-right: 60px;
     background-color: rgba(255, 127, 9,0.9);
-    color: #fff;
+    color: black;
 
 }
 .cart-button{
     height: 50px;
     width: 80px;
-    background-color:rgba(75,105,45,0.7);
+    /* background-color:rgba(75,105,45,0.7); */
+    background-color: wheat;
+    color: #070707;
     border: none;
     border-radius: 50px;
+    margin-bottom: 10px;
 }
 .cart-button:hover{
   background-color:#4b692d;
 }
 .cart-button img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 /* slider Css */
